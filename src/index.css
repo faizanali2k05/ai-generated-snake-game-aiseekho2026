@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyan-400: #22d3ee;
+  --color-cyan-500: #06b6d4;
+  --color-purple-400: #c084fc;
+  --color-purple-500: #a855f7;
+  --color-purple-600: #9333ea;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  background-color: #050505;
+  color: #ffffff;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #050505;
+}
+
+.neon-glow-cyan {
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.5);
+}
+
+.neon-border-cyan {
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.05);
+}
+
+.snake-glow {
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.8);
+}
+
+.food-glow {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 1);
+}
+
+/* Custom scrollbar for neon look */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(34, 211, 238, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 211, 238, 0.5);
+}
